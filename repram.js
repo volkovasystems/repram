@@ -56,7 +56,7 @@
 
 const budge = require( "budge" );
 const falzy = require( "falzy" );
-const optfor = require( "optfor" );
+const optall = require( "optall" );
 const protype = require( "protype" );
 const zelf = require( "zelf" );
 
@@ -74,7 +74,8 @@ const repram = function repram( procedure, parameter ){
 					OBJECT,
 					UNDEFINED,
 					STRING,
-					SYMBOL
+					SYMBOL,
+					"..."
 				]
 			}
 		@end-meta-configuration
@@ -89,11 +90,7 @@ const repram = function repram( procedure, parameter ){
 	let self = zelf( this );
 
 	return function delegate( ){
-		let attribute = arguments;
-
-		return procedure.apply( self, parameter.map( ( parameter ) => {
-			return optfor( attribute, parameter );
-		} ) );
+		return procedure.apply( self, optall( arguments, parameter ) );
 	}
 };
 

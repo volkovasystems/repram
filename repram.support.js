@@ -56,7 +56,7 @@
 
 var budge = require("budge");
 var falzy = require("falzy");
-var optfor = require("optfor");
+var optall = require("optall");
 var protype = require("protype");
 var zelf = require("zelf");
 
@@ -74,7 +74,8 @@ var repram = function repram(procedure, parameter) {
                                                     				OBJECT,
                                                     				UNDEFINED,
                                                     				STRING,
-                                                    				SYMBOL
+                                                    				SYMBOL,
+                                                    				"..."
                                                     			]
                                                     		}
                                                     	@end-meta-configuration
@@ -89,11 +90,7 @@ var repram = function repram(procedure, parameter) {
 	var self = zelf(this);
 
 	return function delegate() {
-		var attribute = arguments;
-
-		return procedure.apply(self, parameter.map(function (parameter) {
-			return optfor(attribute, parameter);
-		}));
+		return procedure.apply(self, optall(arguments, parameter));
 	};
 };
 
