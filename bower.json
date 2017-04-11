@@ -1,6 +1,6 @@
 {
   "name": "repram",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Reorder function parameter.",
   "main": "repram.deploy.js",
   "support": "repram.support.js",
@@ -24,9 +24,9 @@
     "tests"
   ],
   "dependencies": {
-    "budge": "^0.20.0",
+    "budge": "^0.21.0",
     "falzy": "^0.17.0",
-    "optall": "^0.15.0",
+    "optall": "^0.16.0",
     "protype": "^0.21.0",
     "zelf": "^0.11.0"
   }
