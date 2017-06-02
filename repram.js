@@ -48,19 +48,19 @@
 
 	@include:
 		{
-			"budge": "budge".
 			"falzy": "falzy",
 			"optfor": "optfor",
 			"protype": "protype",
+			"shft": "shft",
 			"zelf": "zelf"
 		}
 	@end-include
 */
 
-const budge = require( "budge" );
 const falzy = require( "falzy" );
 const optall = require( "optall" );
 const protype = require( "protype" );
+const shft = require( "shft" );
 const zelf = require( "zelf" );
 
 const repram = function repram( procedure, parameter ){
@@ -88,7 +88,7 @@ const repram = function repram( procedure, parameter ){
 		throw new Error( "invalid procedure" );
 	}
 
-	parameter = budge( arguments );
+	parameter = shft( arguments );
 
 	let self = zelf( this );
 
