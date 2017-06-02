@@ -1,9 +1,9 @@
 yarn add \
 babel-runtime \
-budge \
 falzy \
 optall \
 protype \
+shft \
 zelf \
 --save && \
 yarn add \
@@ -15,10 +15,10 @@ source-map-loader \
 webpack \
 --dev && \
 bower install \
-budge \
 falzy \
 optall \
 protype \
+shft \
 zelf \
 --save \
 --force-latest
