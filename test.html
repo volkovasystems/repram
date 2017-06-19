@@ -19,7 +19,10 @@
 			QUnit.test( "repram unit test", function( assert ) {
 
 				assert.ok( repram( function( ){ return arguments; }, NUMBER, STRING )( "hello", 123, true ) );
-				
+
+				assert.equal( typeof repram( function( ){ return arguments; }, NUMBER, STRING )( "hello", 123, true ) == "object",
+								true, "should return true" );
+
 			} );
 		</script>
 	</body>
