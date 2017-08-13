@@ -51,7 +51,6 @@
               		{
               			"falzy": "falzy",
               			"optfor": "optfor",
-              			"protype": "protype",
               			"shft": "shft",
               			"zelf": "zelf"
               		}
@@ -60,7 +59,6 @@
 
 var falzy = require("falzy");
 var optall = require("optall");
-var protype = require("protype");
 var shft = require("shft");
 var zelf = require("zelf");
 
@@ -85,7 +83,7 @@ var repram = function repram(procedure, parameter) {
                                                     	@end-meta-configuration
                                                     */
 
-	if (falzy(procedure) || !protype(procedure, FUNCTION)) {
+	if (falzy(procedure) || typeof procedure != "function") {
 		throw new Error("invalid procedure");
 	}
 

@@ -2,7 +2,6 @@ yarn add \
 babel-runtime \
 falzy \
 optall \
-protype \
 shft \
 zelf \
 --save && \
@@ -17,7 +16,6 @@ webpack \
 bower install \
 falzy \
 optall \
-protype \
 shft \
 zelf \
 --save \
