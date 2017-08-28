@@ -1,33 +1,27 @@
 {
-  "name": "repram",
-  "version": "0.16.0",
-  "description": "Reorder function parameter.",
-  "main": "repram.deploy.js",
-  "support": "repram.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "reorder",
-    "function",
-    "parameter",
-    "repram"
-  ],
-  "homepage": "https://github.com/volkovasystems/repram",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "falzy": "^0.23.0",
-    "optall": "^0.28.0",
-    "shft": "^0.5.0",
-    "zelf": "^0.14.0"
-  }
+	"name": "repram",
+	"version": "0.16.0",
+	"description": "Reorder function parameter.",
+	"main": "repram.deploy.js",
+	"support": "repram.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"reorder",
+		"function",
+		"parameter",
+		"repram"
+	],
+	"homepage": "https://github.com/volkovasystems/repram",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
 }
