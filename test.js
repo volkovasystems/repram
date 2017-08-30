@@ -66,6 +66,14 @@ const repram = require( "./repram.js" );
 
 describe( "repram", ( ) => {
 
+	describe( "`repram( function( ){ return arguments; }, NUMBER, STRING )( 'hello', 123, true )`", ( ) => {
+		it( "should return object type", ( ) => {
+
+			assert.equal( typeof repram( function( ){ return arguments; }, NUMBER, STRING )( "hello", 123, true ) == "object", true );
+			
+		} );
+	} );
+
 } );
 
 //: @end-server

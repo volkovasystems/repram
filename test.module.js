@@ -70,6 +70,14 @@ const path = require( "path" );
 
 describe( "repram", ( ) => {
 
+	describe( "`repram( function( ){ return arguments; }, NUMBER, STRING )( 'hello', 123, true )`", ( ) => {
+		it( "should return object type", ( ) => {
+
+			assert.equal( typeof repram( function( ){ return arguments; }, NUMBER, STRING )( "hello", 123, true ) == "object", true );
+			
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -78,6 +86,15 @@ describe( "repram", ( ) => {
 //: @client:
 
 describe( "repram", ( ) => {
+
+	describe( "`repram( function( ){ return arguments; }, NUMBER, STRING )( 'hello', 123, true )`", ( ) => {
+		it( "should return object type", ( ) => {
+
+			assert.equal( typeof repram( function( ){ return arguments; }, NUMBER, STRING )( "hello", 123, true ) == "object", true );
+
+		} );
+	} );
+
 } );
 
 //: @end-client
@@ -86,6 +103,27 @@ describe( "repram", ( ) => {
 //: @bridge:
 
 describe( "repram", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`repram( function( ){ return arguments; }, NUMBER, STRING )( 'hello', 123, true )`", ( ) => {
+		it( "should return object type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					return typeof repram( function( ){ return arguments; }, NUMBER, STRING )( "hello", 123, true ) == "object";
+
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, true );
+
+		} );
+	} );
+
 } );
 
 //: @end-bridge

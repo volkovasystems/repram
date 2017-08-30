@@ -1,16 +1,32 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-28T20:03:20.426Z",
-    "end": "2017-08-28T20:03:20.427Z",
-    "duration": 1
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-30T08:04:43.931Z",
+		"end": "2017-08-30T08:04:43.939Z",
+		"duration": 8
+	},
+	"tests": [
+		{
+			"title": "should return object type",
+			"fullTitle": "repram `repram( function( ){ return arguments; }, NUMBER, STRING )( 'hello', 123, true )` should return object type",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should return object type",
+			"fullTitle": "repram `repram( function( ){ return arguments; }, NUMBER, STRING )( 'hello', 123, true )` should return object type",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

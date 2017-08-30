@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-30T08:04:45.396Z",
+	"end": "2017-08-30T08:05:28.247Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "repram",
+			"duration": 0,
+			"start": "2017-08-30T08:05:27.957Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "repram",
+			"duration": 114,
+			"start": "2017-08-30T08:05:27.957Z",
+			"end": "2017-08-30T08:05:28.071Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-30T08:05:27.959Z",
+					"end": "2017-08-30T08:05:27.959Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "repram",
+					"associatedTest": "should return object type"
+				},
+				{
+					"start": "2017-08-30T08:05:28.070Z",
+					"end": "2017-08-30T08:05:28.070Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "repram",
+					"associatedTest": "should return object type"
+				},
+				{
+					"start": "2017-08-30T08:05:28.071Z",
+					"end": "2017-08-30T08:05:28.071Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "repram"
+				}
+			]
+		},
+		{
+			"name": "`repram( function( ){ return arguments; }, NUMBER, STRING )( 'hello', 123, true )`",
+			"duration": 113,
+			"start": "2017-08-30T08:05:27.958Z",
+			"end": "2017-08-30T08:05:28.071Z",
+			"tests": [
+				{
+					"name": "should return object type",
+					"start": "2017-08-30T08:05:27.958Z",
+					"end": "2017-08-30T08:05:28.070Z",
+					"duration": 112,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

@@ -23,5 +23,11 @@
 		"bower_components",
 		"test",
 		"tests"
-	]
+	],
+	"dependencies": {
+		"falzy": "^0.23.0",
+		"optall": "^0.28.0",
+		"shft": "^0.5.0",
+		"zelf": "^0.14.0"
+	}
 }
